@@ -1,7 +1,9 @@
+import React from 'react';
 import { useState, useEffect} from "react";
 import { Container, Row } from "react-bootstrap";
 import { ArrowRightCircle} from "react-boostrap-icons";
 import headerImg from "../assets/img/header-img.svg";
+import { Col, Span } from "react-bootstrap";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -14,7 +16,7 @@ export const Banner = () => {
         let ticker = setInterval(() => {
             tick();
         },delta)
-        return () => {clearInterval(ticekr)}
+        return () => {clearInterval(ticker)}
     }, [text])
     const tick = () => {
         let i = loopNum % toRotate.length;
@@ -25,7 +27,7 @@ export const Banner = () => {
         if(isDeleting) {
             setDelta(prevDelta => prevDelta /2)
         }
-        if (!isDelta && updatedText === fullText) {
+        if (!delta && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
         } else if (isDeleting && updatedText === '') {
