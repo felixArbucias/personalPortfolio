@@ -10,8 +10,8 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const projects = [
         {
-            title: "someomoe",
-            description: "someomoe",
+            title: "Trading bot",
+            description: "Built in python, this trading bot can be implemented using an API key to whitelisted brokerages. It has the ability to recognize buys and sells.",
             imgUrl: projImg3,
         },
         {
@@ -36,23 +36,23 @@ export const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p> osief osefn sof nsfo isnoseifn foins oifnsoifn</p>
+                    <p> Here are a few of my favorite projects! </p>
                     <Tab.Container id = "project-tabs" defaultActiveKey = "first">
                         <Nav variant="pills" defaultActiveKey="/home">
                             <Nav.Item>
-                                <Nav.Link eventKey = "first">Tab One</Nav.Link>
+                                <Nav.Link eventKey = "first">Trading Bot</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                <Nav.Link eventKey="second">Galaga-like FPS Game</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="third">
-                                Tab Three
+                                Light and Sound Memory Game
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
-                            <Tab.Pane eventKey = "first">
+                            <Tab.Pane eventKey = "first"> 
                                 <Row>
                                     {
                                         projects.map((project, index) => {

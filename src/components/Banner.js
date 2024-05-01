@@ -44,8 +44,8 @@ export const Banner = () => {
                 <Row className = "align-items-center">
                     <Col xs = {12} md = {6} xl = {7}>
                         <span className = "tagline">Welcome to my Portfolio</span>
-                        <h1>'Hi I'm webdecoded '<span className = "wrap">{text}</span></h1>
-                        <p> PUT ABOUT YOURSELF HERE ie powerlifting computer science, etc </p>
+                        <h1>Hi, I'm Felix, <span className = "wrap">{text}</span></h1>
+                        <p> Building projects and learning more about programming is my passion. </p>
                         <button onClick={() => console.log('connect')}> Let's connect </button>
                     </Col>
                     <Col xs = {12} md = {6} xl = {5}>

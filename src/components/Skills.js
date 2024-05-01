@@ -1,12 +1,20 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import java from "../assets/img/java.png";
+import python from "../assets/img/Python-Symbol.png";
+import git from "../assets/img/git.png";
+import tailwindcss from "../assets/img/tailwindcss.webp"
+import react from "../assets/img/reactjs.png"
+import nodejs from "../assets/img/nodejs.png"
+import javascript from "../assets/img/js.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import colorSharp from "../assets/img/color-sharp.png";
+import vercel from "../assets/img/vercel.png";
+import sql from "../assets/img/sql.jpg";
+import firebase from "../assets/img/firebase.png";
 import { Container, Row, Col } from "react-bootstrap";
+
 
 export const Skills = () =>{
     const responsive = {
@@ -37,23 +45,47 @@ export const Skills = () =>{
                             <h2>
                                 Skills
                             </h2>
-                            <p>ofseiofnsi fnsekfj nselkjf nselk jnselfkj snefl kjsenf lksejn flskejn </p>
+                            <p>Here is a list of things that I am confident in! </p>
                             <Carousel responsive = {responsive} infinite = {true} className = "skill-slider">
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image"></img>
-                                    <h5>Web Development</h5>
+                                    <img src = {git} alt = "Image"></img>
+                                    <h5>Git</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter2} alt = "Image"></img>
-                                    <h5>Brand identity</h5>
+                                    <img src = {java} alt = "Image"></img>
+                                    <h5>Java</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter3} alt = "Image"></img>
-                                    <h5>Logo design</h5>
+                                    <img src = {python} alt = "Image"></img>
+                                    <h5>Python</h5>
                                 </div>
                                 <div className = "item">
-                                    <img src = {meter1} alt = "Image"></img>
-                                    <h5>Web Development</h5>
+                                    <img src = {javascript} alt = "Image"></img>
+                                    <h5>JavaScript</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {tailwindcss} alt = "Image"></img>
+                                    <h5>Tailwind</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {react} alt = "Image"></img>
+                                    <h5>React.JS</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {nodejs} alt = "Image"></img>
+                                    <h5>Node.JS</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {vercel} alt = "Image"></img>
+                                    <h5>vercel</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {sql} alt = "Image"></img>
+                                    <h5>SQL</h5>
+                                </div>
+                                <div className = "item">
+                                    <img src = {firebase} alt = "Image"></img>
+                                    <h5>Firebase</h5>
                                 </div>
                             </Carousel>
                         </div>
