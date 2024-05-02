@@ -37,42 +37,42 @@ export const Projects = () => {
                     <h2>Projects</h2>
                     <p> Here are a few of my favorite projects! </p>
                     <Tab.Container id = "project-tabs" defaultActiveKey = "first">
-                        <Nav variant="pills" defaultActiveKey="/home">
-                            <Nav.Item>
-                                <Nav.Link eventKey = "first">Trading Bot</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="second">Galaga-like FPS Game</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="third">
-                                Light and Sound Memory Game
-                                </Nav.Link>
-                            </Nav.Item>
-                        </Nav>
-                        <Tab.Content>
-                            <Tab.Pane eventKey = "first"> 
-                                <Row>
-                                    {
-                                        projects.map((project, index) => {
-                                            return (
-                                                <ProjectCard
-                                                    key = {index}
-                                                    {...project}
-                                                    />
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey = "second"> lorem ipsum</Tab.Pane>
-                            <Tab.Pane eventKey = "third">lorem ipsum</Tab.Pane>
-                        </Tab.Content>
-                        </Tab.Container>
-                    </Col>
-                </Row>
-            </Container>
-            <img className = "background-image-right" src = {colorSharp2}></img>
-        </section>
-    )
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content align-items-center" id="pills-tab">
+                        <Nav.Item>
+                            <Nav.Link eventKey = "first">Trading Bot</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="second">Galaga-like FPS Game</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="third">
+                            Light and Sound Memory Game
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <Tab.Content>
+                        <Tab.Pane eventKey = "first"> 
+                            <Row>
+                                {
+                                    projects.map((project, index) => {
+                                        return (
+                                            <ProjectCard
+                                                key = {index}
+                                                {...project}
+                                                />
+                                        )
+                                    })
+                                }
+                            </Row>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey = "second"> lorem ipsum</Tab.Pane>
+                        <Tab.Pane eventKey = "third">lorem ipsum</Tab.Pane>
+                    </Tab.Content>
+                    </Tab.Container>
+                </Col>
+            </Row>
+        </Container>
+        <img className = "background-image-right" src = {colorSharp2}></img>
+    </section>
+)
 }
