@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Row } from "react-bootstrap";
-
+import { Row, Container, Col } from "react-bootstrap";
+import contactImg from '../assets/img/contact-img.svg';
 
 
 export const Contact = () => {
@@ -35,7 +35,7 @@ export const Contact = () => {
         let result = response.json();
         setFormDetails(formInitialDetails);
         if (result.code === 200) {
-            setStatus({success:true, message: "Message sent successfully"}),
+            setStatus({success:true, message: "Message sent successfully"});
         } else {
             setStatus({success:false, message: "Something went wrong, please try again later."})
         }

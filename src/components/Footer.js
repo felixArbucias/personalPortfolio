@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap"
 import logo from "../assets/img/logo.svg"
 import navIcon1 from "../assets/img/nav-icon1.svg"
 import githubIcon from "../assets/img/github.png"
+import Mailchimpform from "react-mailchimp-form"
 /*
 npm install react-mailchimp-form
 */
