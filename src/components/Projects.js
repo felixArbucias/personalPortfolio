@@ -6,25 +6,26 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import { useState } from "react"
+import { Link } from "react-router-dom";
 export const Projects = () => {
     const projects = [
         {
-            title: "Trading bot",
-            description: "Built in python, this trading bot can be implemented using an API key to whitelisted brokerages. It has the ability to recognize buys and sells.",
+            title: "Light and Sound Memory Game",
+            description: "Built for CodePath x SalesForce finalist task.",
             imgUrl: projImg3,
         },            
     ];
     const project2 = [
         {
-            title: "",
-            description: "",
+            title: "Reddit Reply Bot",
+            description: "Reply bot utilizing PRAW API key to reddit account; Allows user to specify a thread or post and make automated replies to specific comments containing keywords within that thread/post.",
             imgUrl: projImg2,
         },
     ];
     const project3 = [ 
         {
-            title: "",
-            description: "",
+            title: "DevBuds",
+            description: "DevBuds is a collaborative platform where developers can get together and work on non-commercial projects. By posting project needs and applying to specific roles, users can find collaborators with matching skills to bring their ideas to life.",
             imgUrl: projImg3,
         },
     ];
@@ -39,7 +40,7 @@ export const Projects = () => {
                     <Tab.Container id = "project-tabs" defaultActiveKey = "first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Stock Trading Bot</Nav.Link>
+                            <Nav.Link eventKey="first">Light and Sound Memory Game</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Reddit Reply Bot</Nav.Link>
@@ -51,30 +52,13 @@ export const Projects = () => {
                     <Tab.Content>
                         <Tab.Pane eventKey = "first"> 
                             <Row>
-                                {
-                                    projects.map((project, index) => {
-                                        return (
-                                            <ProjectCard
-                                                key = {index}
-                                                {...project}
-                                                />
-                                        )
-                                    })
-                                }
+                                
                             </Row>
+                            
                         </Tab.Pane>
                         <Tab.Pane eventKey = "second" >
                             <Row>
-                                {
-                                    project2.map((project, index) => {
-                                        return (
-                                            <ProjectCard
-                                                key = {index}
-                                                {...project}
-                                                />
-                                        )
-                                    })
-                                }
+                                
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey = "third">
