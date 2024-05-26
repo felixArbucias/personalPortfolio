@@ -1,10 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import lightandsound from "../assets/img/lightandsound.pdf";
-import devbuds from "../assets/img/devbuds.pdf";
+
+import devbudDark from "../assets/img/devbudDark.png";
+import devbudLight from "../assets/img/devbudLight.png";
+import devbudGit from "../assets/img/devbudGit.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import { useState } from "react"
@@ -16,21 +17,31 @@ export const Projects = () => {
         {
             title: "Light and Sound Memory Game",
             description: "Built for CodePath x SalesForce finalist task.",
-            imgUrl: lightandsound,
-        },            
+            imgUrl: projImg1,
+        }, 
     ];
     const project2 = [
         {
             title: "Reddit Reply Bot",
             description: "Reply bot utilizing PRAW API key to reddit account; Allows user to specify a thread or post and make automated replies to specific comments containing keywords within that thread/post.",
-            imgUrl: projImg2,
+            imgUrl: projImg1,
         },
     ];
     const project3 = [ 
         {
             title: "DevBuds",
+            description: "Dark Mode Preview",
+            imgUrl: devbudDark,
+        },
+        {
+            title: "",
             description: "DevBuds is a collaborative platform where developers can get together and work on non-commercial projects. By posting project needs and applying to specific roles, users can find collaborators with matching skills to bring their ideas to life.",
-            imgUrl: devbuds
+            imgUrl: devbudLight,
+        },
+        {
+            title: "",
+            description: "Git Hub Preview",
+            imgUrl: devbudGit,
         },
     ];
 
@@ -56,17 +67,44 @@ export const Projects = () => {
                     <Tab.Content>
                         <Tab.Pane eventKey = "first"> 
                             <Row>
-                                
+                                {
+                                    projects.map((project, index) => {
+                                        return (
+                                            <ProjectCard
+                                            key = {index}
+                                            {...project}
+                                            />
+                                        )
+                                    })
+                                }
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey = "second" >
                             <Row>
-
+                            {
+                                    project2.map((project, index) => {
+                                        return (
+                                            <ProjectCard
+                                            key = {index}
+                                            {...project}
+                                            />
+                                        )
+                                    })
+                                }
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey = "third">
                             <Row>
-
+                            {
+                                    project3.map((project, index) => {
+                                        return (
+                                            <ProjectCard
+                                            key = {index}
+                                            {...project}
+                                            />
+                                        )
+                                    })
+                                }
                             </Row>
                         </Tab.Pane>
                     </Tab.Content>
