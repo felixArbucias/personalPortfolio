@@ -466,6 +466,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+.proj-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
 
 /************ Projects Css ************/
 .contact {

@@ -9,6 +9,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import { Github } from "react-bootstrap-icons";
 
 export const Projects = () => {
     const projects = [
@@ -55,7 +56,7 @@ export const Projects = () => {
                     <Tab.Content>
                         <Tab.Pane eventKey = "first"> 
                             <Row>
-                               
+                                
                             </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey = "second" >
