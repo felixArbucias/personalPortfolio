@@ -1,4 +1,4 @@
-import { Contact } from "./Contact"
+import { Contact, Row, Col } from "./Contact"
 import { Container } from "react-bootstrap"
 import logo from "../assets/img/logo.svg"
 import navIcon1 from "../assets/img/nav-icon1.svg"
