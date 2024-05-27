@@ -6,18 +6,32 @@ import devbudDark from "../assets/img/devbudDark.png";
 import devbudLight from "../assets/img/devbudLight.png";
 import devbudGit from "../assets/img/devbudGit.png";
 
+import memGame1 from "../assets/img/memoryGame1.png";
+import memGame2 from "../assets/img/MemoryGame2.png"
+import memGameGit from "../assets/img/memoryGameGit.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
-import { useState } from "react"
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Github } from "react-bootstrap-icons";
 
 export const Projects = () => {
-    const projects = [
+    const project3 = [
         {
             title: "Light and Sound Memory Game",
             description: "Built for CodePath x SalesForce finalist task.",
-            imgUrl: projImg1,
+            imgUrl: memGame1,
+        }, 
+        {
+            title: "",
+            description: "Game plays a variety of sounds and flashes button being pressed. User must repeat the sequence to win.",
+            imgUrl: memGame2,
+        }, 
+        {
+            title: "",
+            description: "GitHub Preview",
+            imgUrl: memGameGit,
         }, 
     ];
     const project2 = [
@@ -27,7 +41,7 @@ export const Projects = () => {
             imgUrl: projImg1,
         },
     ];
-    const project3 = [ 
+    const project1 = [ 
         {
             title: "DevBuds",
             description: "Dark Mode Preview",
@@ -55,20 +69,20 @@ export const Projects = () => {
                     <Tab.Container id = "project-tabs" defaultActiveKey = "first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Light and Sound Memory Game</Nav.Link>
+                            <Nav.Link eventKey="first">DevBuds</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Reddit Reply Bot</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">DevBuds</Nav.Link>
+                            <Nav.Link eventKey="third">Memory Game</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content>
                         <Tab.Pane eventKey = "first"> 
                             <Row>
                                 {
-                                    projects.map((project, index) => {
+                                    project1.map((project, index) => {
                                         return (
                                             <ProjectCard
                                             key = {index}
