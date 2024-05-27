@@ -10,6 +10,8 @@ import memGame1 from "../assets/img/memoryGame1.png";
 import memGame2 from "../assets/img/MemoryGame2.png"
 import memGameGit from "../assets/img/memoryGameGit.png";
 
+import redditReply from "../assets/img/redditReply.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import { useState } from "react";
@@ -38,7 +40,7 @@ export const Projects = () => {
         {
             title: "Reddit Reply Bot",
             description: "Reply bot utilizing PRAW API key to reddit account; Allows user to specify a thread or post and make automated replies to specific comments containing keywords within that thread/post.",
-            imgUrl: projImg1,
+            imgUrl: redditReply,
         },
     ];
     const project1 = [ 
