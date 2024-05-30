@@ -1,11 +1,8 @@
-import react from 'react';
 import { useState, useEffect } from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
+import { Row, Col } from "react-bootstrap";
+import Container from 'react-bootstrap/Container'
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
-import TrackVisibility from 'react-on-screen';
+
 
 
 export const Banner = () => {

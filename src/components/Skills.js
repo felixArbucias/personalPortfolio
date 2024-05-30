@@ -7,16 +7,12 @@ import nodejs from "../assets/img/nodejs.png"
 import javascript from "../assets/img/js.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png";
+
 import vercel from "../assets/img/vercel.png";
 import sql from "../assets/img/sql.jpg";
 import firebase from "../assets/img/firebase.png";
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
+import { Row, Col } from "react-bootstrap";
+import Container from 'react-bootstrap/Container'
 
 
 export const Skills = () =>{

@@ -1,13 +1,7 @@
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col'
-import Tab from 'react-bootstrap/Tab';
-import Nav from 'react-bootstrap/Nav';
-
-
+import { Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 
+import Container from 'react-bootstrap/Container'
 
 import devbudDark from "../assets/img/devbudDark.png";
 import devbudLight from "../assets/img/devbudLight.png";
@@ -20,10 +14,6 @@ import memGameGit from "../assets/img/memoryGameGit.png";
 import redditReply from "../assets/img/redditReply.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import TrackVisibility from 'react-on-screen';
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Github } from "react-bootstrap-icons";
 
 export const Projects = () => {
     const project3 = [
