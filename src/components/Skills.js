@@ -13,7 +13,10 @@ import colorSharp from "../assets/img/color-sharp.png";
 import vercel from "../assets/img/vercel.png";
 import sql from "../assets/img/sql.jpg";
 import firebase from "../assets/img/firebase.png";
-import { Container, Row, Col } from "react-bootstrap";
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
 
 export const Skills = () =>{

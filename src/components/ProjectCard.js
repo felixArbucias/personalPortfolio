@@ -1,4 +1,5 @@
-import { Col, imgUrl } from "react-bootstrap";
+import Col from 'react-bootstrap/Col';
+import imgUrl from 'react-bootstrap/imgUrl'
 
 export const ProjectCard = ({ title, description, imgUrl }) => {
   return (

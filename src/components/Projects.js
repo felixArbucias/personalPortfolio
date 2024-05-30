@@ -1,6 +1,13 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
+import Tab from 'react-bootstrap/Tab';
+import Nav from 'react-bootstrap/Nav';
+
+
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
+
 
 import devbudDark from "../assets/img/devbudDark.png";
 import devbudLight from "../assets/img/devbudLight.png";
