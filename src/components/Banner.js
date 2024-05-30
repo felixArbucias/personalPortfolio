@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
-import Container from 'react-bootstrap/Container'
+import { Row, Col, Container} from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 
 
