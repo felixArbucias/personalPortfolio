@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-
+import TrackVisibility from "react-on-screen";
 import headerImg from "../assets/img/header-img.svg";
-
+import { ArrowRightCircle } from "react-bootstrap-icons";
 
 
 export const Banner = () => {
@@ -37,20 +37,30 @@ export const Banner = () => {
         }
     }
     return (
-        <section className = "banner" id = "home">
-            <Container>
-                <Row className = "align-items-center">
-                    <Col xs = {12} md = {6} xl = {7}>
-                        <span className = "tagline">Welcome to my Portfolio</span>
-                        <h1>Hi, I'm Felix, <span className = "wrap">{text}</span></h1>
-                        <p> Building projects and learning more about programming is my passion. </p>
-                        <button onClick={() => console.log('connect')}> Let's connect </button>
-                    </Col>
-                    <Col xs = {12} md = {6} xl = {5}>
-                        <img src = {headerImg} alt = "Header Img" />
-                    </Col>
-                </Row>
-            </Container>
+        <section className="banner" id="home">
+          <Container>
+            <Row className="aligh-items-center">
+              <Col xs={12} md={6} xl={7}>
+                <TrackVisibility>
+                  {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <span className="tagline">Hey There </span>
+                    <h1>{`Hi! I'm Felix`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Engineer", "AI Learner" ]'><span className="wrap">{text}</span></span></h1>
+                      <p>Building projects and exploring new programming challenges is my passion. Alongside my dedication to software development, I am a collegiate powerlifter with a current total of around 1400 lbs. I am particularly fascinated by AI development and eager to deepen my understanding of large language models.</p>
+                      <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </div>}
+                </TrackVisibility>
+              </Col>
+              <Col xs={12} md={6} xl={5}>
+                <TrackVisibility>
+                  {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                      <img src={headerImg} alt="Header Img"/>
+                    </div>}
+                </TrackVisibility>
+              </Col>
+            </Row>
+          </Container>
         </section>
-    )
-}
+      )
+    }
