@@ -3,7 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-
+import astronaut from "../assets/img/astronaut.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
