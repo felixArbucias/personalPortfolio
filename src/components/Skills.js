@@ -11,8 +11,8 @@ import 'react-multi-carousel/lib/styles.css';
 import vercel from "../assets/img/vercel.png";
 import sql from "../assets/img/sql.jpg";
 import firebase from "../assets/img/firebase.png";
-import { Row, Col, Container } from "react-bootstrap";
-
+import { Row, Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
 
 export const Skills = () =>{

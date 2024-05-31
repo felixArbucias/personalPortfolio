@@ -1,4 +1,5 @@
-import { Row, Col, Container } from "./Contact"
+import { Row, Col } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 import logo from "../assets/img/logo.svg"
 import navIcon1 from "../assets/img/nav-icon1.svg"
 import githubIcon from "../assets/img/github.svg"
