@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import devbudDark from "../assets/img/devbudDark.png";
 import devbudLight from "../assets/img/devbudLight.png";
 import devbudGit from "../assets/img/devbudGit.png";
-
+import eTracker from "../assets/img/expensetracker.png";
 import memGame1 from "../assets/img/memoryGame1.png";
 import memGame2 from "../assets/img/MemoryGame2.png"
 import memGameGit from "../assets/img/memoryGameGit.png";
@@ -35,9 +35,9 @@ export const Projects = () => {
     ];
     const project2 = [
         {
-            title: "Reddit Reply Bot",
-            description: "Reply bot utilizing PRAW API key to reddit account; Allows user to specify a thread or post and make automated replies to specific comments containing keywords within that thread/post.",
-            imgUrl: redditReply,
+            title: "Expense Tracker",
+            description: "Built an expense tracker using VueJSgit  & Composition API",
+            imgUrl: eTracker,
         },
     ];
     const project1 = [ 
@@ -71,7 +71,7 @@ export const Projects = () => {
                             <Nav.Link eventKey="first">DevBuds</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Reddit Reply Bot</Nav.Link>
+                            <Nav.Link eventKey="second">Expense Tracker</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="third">Memory Game</Nav.Link>
